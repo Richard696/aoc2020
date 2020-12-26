@@ -1,0 +1,8 @@
+digraph Rules {
+	"shiny gold" -> "dark red";
+	"dark red" -> "dark orange";
+	"dark orange" -> "dark yellow";
+	"dark yellow" -> "dark green";
+	"dark green" -> "dark blue";
+	"dark blue" -> "dark violet";
+}
