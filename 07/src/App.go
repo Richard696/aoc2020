@@ -48,7 +48,7 @@ func lineToRule(line string) Rule {
 	var container = strings.TrimRight(strings.Split(tmp[0], "bags")[0], " ")
 	children := []Child{}
 
-	// expect numbers -> ([0-9]); expect random stuff -> (.*); optional s -> s?
+	// expect numbers -> ([0-9]); expect random stuff -> (.*); "?" is referred as lazy matching
 	r := regexp.MustCompile(" ([0-9]+) (.*) bags?")
 	// fmt.Println("Children bags: ")
 	if tmp[1] != " no other bags." {
